@@ -4,7 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabel Pengaduan masyarakat</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS eksternal -->
+    <!-- <link rel="stylesheet" href="style.css"> Menghubungkan file CSS eksternal -->
+    <style>
+    /* Styling untuk seluruh halaman */
+body {
+    background-color: #003366; /* Latar belakang biru tua */
+    color: white; /* Teks berwarna putih untuk kontras yang baik */
+    font-family: Arial, sans-serif; /* Menetapkan font yang lebih baik */
+}
+
+/* Styling untuk tabel */
+table {
+    border-collapse: collapse;
+    width: 60%; /* Bisa diubah sesuai kebutuhan */
+    margin: 20px auto; /* Memposisikan tabel di tengah */
+    border-radius: 8px; /* Membuat sudut tabel melengkung */
+    overflow: hidden; /* Menyembunyikan elemen yang melampaui batas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan yang lebih jelas */
+    background-color: #e6f7ff; /* Latar belakang tabel biru muda */
+}
+
+table, th, td {
+    border: 1px solid black; /* Garis hitam untuk tabel */
+    padding: 12px; /* Padding yang lebih besar untuk tampil lebih rapi */
+    text-align: center; /* Memusatkan teks di dalam sel */
+}
+
+th {
+    background-color: #0000FF; /* Latar belakang biru tua yang lebih gelap */
+    color: white; /* Teks putih */
+    font-weight: bold; /* Menebalkan teks */
+}
+
+td {
+    background-color: #0000FF; /* Warna biru muda untuk sel */
+}
+
+tr:nth-child(even) {
+    background-color: #d1e9ff; /* Warna selang-seling */
+}
+
+tr:hover {
+    background-color: #b3d7ff; /* Warna saat di-hover */
+}
+
+    </style>
 </head>
 <?php
 include "koneksi.php";
