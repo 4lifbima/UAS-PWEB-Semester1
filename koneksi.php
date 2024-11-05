@@ -1,7 +1,3 @@
 <?php
 
-$conn = mysqli_connect("localhost","root","","uaspweb");
-
-if(!$conn){
-    
-}
+$conn = mysqli_connect("localhost","root","","pweb_uas");
