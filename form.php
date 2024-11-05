@@ -86,17 +86,17 @@
             <a href="#home"><i class="fa fa-home"></i> Beranda</a>
             <a href="#tentang"><i class="fa fa-info-circle"></i> Tentang</a>
             <a href="form.html"><i class="fa fa-bullhorn"></i> Pengaduan</a>
-            <a href="#contact"><i class="fa fa-phone-square"></i> Contact</a>
+            <a href="table.html"><i class="fa fa-table"></i> Table</a>
         </div>
     </div>
     </header>
 
     <!-- Section Form Pengaduan -->
-    <section class="form-pengaduan">
+    <section class="form-pengaduan" data-aos="zoom-out" data-aos-duration="1000">
         <h2>Form Pengaduan</h2>
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="aksi_pengaduan.php" method="POST" enctype="multipart/form-data">
             <label for="judul">Nama Pengadu:</label>
-            <input type="text" id="judul" name="judul" required placeholder="Nama Pengadu">
+            <input type="text" id="nama" name="nama" required placeholder="Nama Pengadu">
 
             <label for="judul">Judul Pengaduan:</label>
             <input type="text" id="judul" name="judul" required placeholder="Masukkan judul pengaduan">
@@ -110,10 +110,12 @@
             <label for="foto">Foto Pengaduan:</label>
             <input type="file" id="foto" name="foto" accept="image/*">
 
-            <button type="submit">Kirim </button>
+            <button type="submit" name="tambah">Kirim </button>
         </form>
     </section>
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
