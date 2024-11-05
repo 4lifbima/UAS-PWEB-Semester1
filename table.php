@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel Formulir</title>
+    <title>Tabel Pengaduan masyarakat</title>
     <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS eksternal -->
 </head>
 <?php
@@ -15,7 +15,7 @@ if (isset($_POST['proses'])) {
     $hobi = implode(", ", $_POST['hobi']);
 
     // Menyusun query INSERT dengan tabel yang benar
-    $query = "INSERT INTO formulir (nama, judul_pengaduan, deskripsi_pengaduan, tanggal, foto) 
+    $query = "INSERT INTO masyarakat (nama, judul_pengaduan, deskripsi_pengaduan, tanggal, foto) 
               VALUES (
                   '$_POST[nama]', 
                   '$_POST[judul_pengaduan]',  
@@ -38,30 +38,23 @@ if (isset($_POST['proses'])) {
 <table class="tabel">
     <tr>
         <td>No.</td>
-        <td>Nama Mahasiswa</td>
-        <td>Email</td>
-        <td>NIM</td>
-        <td>Jurusan</td>
-        <td>Jenis Kelamin</td>
-        <td>Hobi</td>
-        <td>Tanggal Lahir</td>
-        <td>Keterangan</td>
+        <td>Judul Pengaduan</td>
+        <td>Deskripsi Pengaduan</td>
+        <td>Tanggal</td>
+        <td>Foto</td>
     </tr>
     <?php
     $no = 1;
-    $data_mhs = mysqli_query($koneksi, "SELECT * FROM mahasiswa ORDER BY nama ASC"); 
-    while ($tampil_mhs = mysqli_fetch_array($data_mhs)) {
+    $data_pengaduan = mysqli_query($koneksi, "SELECT * FROM masyarakat ORDER BY tanggal ASC"); 
+    while ($tampil_pengaduan = mysqli_fetch_array($data_pengaduan)) {
         ?>
         <tr>
             <td><?= $no++; ?>.</td>
-            <td><?= $tampil_mhs['nama']; ?></td>
-            <td><?= $tampil_mhs['surel']; ?></td>
-            <td><?= $tampil_mhs['nim']; ?></td>
-            <td><?= $tampil_mhs['jurusan']; ?></td>
-            <td><?= $tampil_mhs['jenis_kelamin']; ?></td>
-            <td><?= $tampil_mhs['hobi']; ?></td>
-            <td><?= $tampil_mhs['tanggal_lahir']; ?></td>
-            <td><?= $tampil_mhs['pesan']; ?></td>
+            <td><?= $tampil_pengaduan['nama']; ?></td>
+            <td><?= $tampil_pengaduan['judul_pengaduan']; ?></td>
+            <td><?= $tampil_pengaduan['deskripsi_pengaduan']; ?></td>
+            <td><?= $tampil_pengaduan['tanggal']; ?></td>
+            <td><?= $tampil_pengaduan['foto']; ?></td>
         </tr>
     <?php } ?>
 </table>
