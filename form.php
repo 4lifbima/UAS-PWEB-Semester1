@@ -98,8 +98,7 @@ include "koneksi.php";
     <!-- Section Form Pengaduan -->
     <section class="form-pengaduan">
         <h2>Form Pengaduan</h2>
-        <form action="table.php" method="POST">
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="table.php" method="POST" enctype="multipart/form-data">
             <label for="judul">Nama Pengadu:</label>
             <input type="text" id="judul" name="judul" required placeholder="Nama Pengadu">
 

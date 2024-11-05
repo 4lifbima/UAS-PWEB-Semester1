@@ -25,7 +25,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black; /* Garis hitam untuk tabel */
+    border: 1px solid #e6f7ff; /* Garis hitam untuk tabel */
     padding: 12px; /* Padding yang lebih besar untuk tampil lebih rapi */
     text-align: center; /* Memusatkan teks di dalam sel */
 }
@@ -54,10 +54,6 @@ tr:hover {
 include "koneksi.php";
 
 if (isset($_POST['proses'])) {
-   
-    // Menggabungkan hobi menjadi string
-    $hobi = implode(", ", $_POST['hobi']);
-
     // Menyusun query INSERT dengan tabel yang benar
     $query = "INSERT INTO masyarakat (nama, judul_pengaduan, deskripsi_pengaduan, tanggal, foto) 
               VALUES (
@@ -78,7 +74,6 @@ if (isset($_POST['proses'])) {
 }
 ?>
 
-<link rel="stylesheet" href="styles.css">
 <table class="tabel">
     <tr>
         <td>No.</td>
