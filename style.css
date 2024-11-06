@@ -207,69 +207,54 @@ body {
     }
 }
 
-/* about sections */
-    .about{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 25px;
-        margin: 30px 10px;
-        color: #f2f2f2;
-    }
+   /* Styling Section About Cards */
+   .about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.about-card {
+    background-color: #ffffff3f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(102, 100, 100, 0.3);
+    transition: transform 0.3s;
+}
+.about-card:hover {
+    transform: translateY(-5px);
+}
+.about-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.about-card h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+.about-card p {
+    font-size: 16px;
+    color: #ffffffcc;
+}
 
-    .about-text {
-        flex: 1;
-        padding-right: 20px;
-    }
-    
-    .about-text h1 {
-        font-size: 36px;
-        margin-bottom: 10px;
-    }
-    
-    .about-text p {
-        font-size: 18px;
-        line-height: 1.6;
-    }
-    
-    .about-image {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .about-image img {
-        max-width: 400px;
-        height: auto;
-    }
-/* Responsif untuk tampilan mobile */
-@media screen and (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .about-text {
-        padding-right: 0;
-        text-align: start;
-    }
-    .about-text h1 {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-    
-    .about-text p {
-        font-size: 15px;
-        line-height: 1.6;
-    }
-    
-    .about-image {
-        margin-top: 20px;
-    }
-    .about-image img{
-        max-width: 370px;
-        height: auto;
-    }
+/* Footer Styling */
+footer {
+    background-color: #101063;
+    color: #ffffffcc;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+footer p {
+    margin: 5px;
 }
 
     

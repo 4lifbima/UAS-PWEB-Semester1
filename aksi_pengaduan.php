@@ -15,7 +15,7 @@
     $query = "INSERT INTO pengaduan(nama, judul, deskripsi, tanggal, foto) VALUES('$nama', '$judul', '$deskripsi', '$tanggal', '$foto')";
     $sql = mysqli_query($conn, $query);
             if($sql){
-                header("location: index.php");
+                header("location: table.php");
             }else{
                 echo "Data gagal disimpan:(" . mysqli_error($koneksi);
             }

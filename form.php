@@ -85,8 +85,8 @@
         <div class="menu">
             <a href="/"><i class="fa fa-home"></i> Beranda</a>
             <a href="index.php#tentang"><i class="fa fa-info-circle"></i> Tentang</a>
-            <a href="form.html"><i class="fa fa-bullhorn"></i> Pengaduan</a>
-            <a href="table.html"><i class="fa fa-table"></i> Table</a>
+            <a href="form.php"><i class="fa fa-bullhorn"></i> Pengaduan</a>
+            <a href="table.php"><i class="fa fa-table"></i> Table</a>
         </div>
     </div>
     </header>

@@ -39,16 +39,45 @@
     </section>
 
     <!-- ABOUT SECTION -->
-     <section class="about" id="tentang">
-        <div class="about-image" data-aos="zoom-in" data-aos-duration="900">
-            <img src="img/bimaa.png" alt="">
+    <section class="about" id="tentang">
+        <h1 class="section-title" style="text-align:center; color: #ffffff;">My-team</h1>
+        <div class="about-cards">
+            <!-- Card 1 -->
+            <div class="about-card" data-aos="fade-up" data-aos-duration="900">
+                <img src="img/pakrahmat.png" alt="Member Image">
+                <h3>Rahmat Taufik R.L Bau</h3>
+                <p>Dosen Pengampu</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="about-card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="img/alif.png" alt="Member Image">
+                <h3>Alif Bima Pradana</h3>
+                <p>Backend Developer</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="about-card" data-aos="fade-up" data-aos-duration="1100">
+                <img src="img/indah.png" alt="Member Image">
+                <h3>Indah Belastri Sibran</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="about-card" data-aos="fade-up" data-aos-duration="1200">
+                <img src="img/dhimaz.png" alt="Member Image">
+                <h3>Dhimaz Pramudya Lasabang</h3>
+                <p>UI/UX Designer</p>
+            </div>
         </div>
-        <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
-            <h1>About Us</h1>
-            <p>Pengaduan masyarakat adalah penyampaian keluhan, saran, gagasan, atau kritik dari masyarakat kepada lembaga pemerintah terkait. Pengaduan masyarakat dapat dilakukan secara lisan maupun tertulis.</p>
-        </div>
-     </section>
+    </section>
 
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2024 Kelompok 3 | Pengaduan Masyarakat.</p>
+        <p>Follow us on social media: 
+            <a href="" style="color:#ffffffcc;"><i class="fa fa-facebook-square"></i></a> | 
+            <a href="https://github.com/4lifbima/UAS-PWEB-Semester1" style="color:#ffffffcc;"><i class="fa fa-github"></i></a> | 
+            <a href="https://www.instagram.com/alifbimapradana07" style="color:#ffffffcc;"><i class="fa fa-instagram"></i></a>
+        </p>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
