@@ -13,7 +13,7 @@
     <header>
     <div class="navbar">
         <div class="logo">
-            <a href="#">PENGADUAN</a>
+            <a href="#"><i class="fa fa-bullhorn"></i> PENGADUAN</a>
         </div>
         <div class="hamburger" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
@@ -21,7 +21,7 @@
         <div class="menu">
             <a href="#"><i class="fa fa-home"></i> Beranda</a>
             <a href="#tentang"><i class="fa fa-info-circle"></i> Tentang</a>
-            <a href="form.php"><i class="fa fa-bullhorn"></i> Pengaduan</a>
+            <a href="form.php"><i class="fa fa-file-text"></i> Pengaduan</a>
             <a href="table.php"><i class="fa fa-table"></i> Table</a>
         </div>
     </div>
@@ -31,10 +31,10 @@
      <section class="herro" id="home">
         <div class="herro-text" data-aos="fade-right" data-aos-duration="1000">
             <h1>Selamat Datang di Pengaduan Masyarakat</h1>
-            <p> Pengaduan masyarakat adalah laporan dari masyarakat mengenai adanya indikasi terjadinya penyimpangan, korupsi, kolusi dan nepotisme yang dilakukan aparat pemerintah daerah dalam penyelenggaraan pemerintahan.  Tatacara pengaduan masyarakat pada Pemerintah Kabupaten Tegal diatur dalam Peraturan Bupati No. 10 Tahun 2015 tentang Pedoman Pengelolaan Pengaduan Masyarakat di Lingkungan Pemerintah Kabupaten Tegal.</p>
+            <p> Pengaduan masyarakat adalah laporan dari masyarakat mengenai adanya indikasi terjadinya penyimpangan, korupsi, kolusi dan nepotisme yang dilakukan aparat pemerintah daerah dalam penyelenggaraan pemerintahan.</p>
         </div>
         <div class="herro-image" data-aos="fade-up" data-aos-duration="1000">
-            <img src="img/Logo.png" alt="Gambar Hero" />
+            <img src="img/hero1.png" alt="Gambar Hero" />
         </div>
     </section>
 
@@ -45,7 +45,7 @@
             <!-- Card 1 -->
             <div class="about-card" data-aos="fade-up" data-aos-duration="900">
                 <img src="img/pakrahmat.png" alt="Member Image">
-                <h3>Rahmat Taufik R.L Bau</h3>
+                <h3>Rahmat Taufik R.L Bau, M.Kom.</h3>
                 <p>Dosen Pengampu</p>
             </div>
             <!-- Card 2 -->
@@ -71,7 +71,7 @@
 
     <!-- footer -->
     <footer>
-        <p>&copy; 2024 Kelompok 3 | Pengaduan Masyarakat.</p>
+        <p>&copy; 2024 Kelompok 3 - Pengaduan Masyarakat.</p>
         <p>Follow us on social media: 
             <a href="" style="color:#ffffffcc;"><i class="fa fa-facebook-square"></i></a> | 
             <a href="https://github.com/4lifbima/UAS-PWEB-Semester1" style="color:#ffffffcc;"><i class="fa fa-github"></i></a> | 

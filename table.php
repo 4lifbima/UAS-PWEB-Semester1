@@ -15,14 +15,14 @@
             border-collapse: collapse;
             width: 95%; /* Bisa diubah sesuai kebutuhan */
             margin: 20px auto; /* Memposisikan tabel di tengah */
-            border-radius: 8px; /* Membuat sudut tabel melengkung */
+            border-radius: 5px; /* Membuat sudut tabel melengkung */
             overflow: hidden; /* Menyembunyikan elemen yang melampaui batas */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan yang lebih jelas */
             background-color: #e6f7ff; /* Latar belakang tabel biru muda */
         }
 
         table, th, td {
-            border: 1px solid white; /* Garis hitam untuk tabel */
+            border: 1px solid #000; /* Garis hitam untuk tabel */
             padding: 12px; /* Padding yang lebih besar untuk tampil lebih rapi */
             text-align: center; /* Memusatkan teks di dalam sel */
         }
@@ -34,20 +34,46 @@
         }
 
         td {
-            background-color: #8a8a9252; /* Warna biru muda untuk sel */
+            background-color: #ffffff34; /* Warna biru muda untuk sel */
             color: #000;
         }
 
         tr:nth-child(even) {
-            background-color: #fff; /* Warna selang-seling */
+            background-color: #ffffff34; /* Warna selang-seling */
         }
 
         tr:hover {
             background-color: #b3d7ff; /* Warna saat di-hover */
         }
         thead{
-            background-color: blue;
+            background-color: #494a4d;
             color: white;
+        }
+        /* modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; 
+            z-index: 100; 
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.8); 
+        }
+        .modal-content {
+            display: block;
+            margin: auto;
+            max-width: 80%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
         }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -57,19 +83,22 @@
 <header>
     <div class="navbar">
         <div class="logo">
-            <a href="#">PENGADUAN</a>
+            <a href="#"> <i class="fa fa-bullhorn"></i> PENGADUAN</a>
         </div>
         <div class="hamburger" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
         </div>
         <div class="menu">
             <a href="#"><i class="fa fa-home"></i> Beranda</a>
-            <a href="#tentang"><i class="fa fa-info-circle"></i> Tentang</a>
-            <a href="form.php"><i class="fa fa-bullhorn"></i> Pengaduan</a>
+            <a href="index.php#tentang"><i class="fa fa-info-circle"></i> Tentang</a>
+            <a href="form.php"><i class="fa fa-file-text"></i> Pengaduan</a>
             <a href="table.php"><i class="fa fa-table"></i> Table</a>
         </div>
     </div>
     </header>
+    <div>
+        <h2 align="center" style="color: white;"> Table Pengaduan</h2>
+    </div>
         <!-- Table -->
         <table class="tabel" data-aos="zoom-in" data-aos-duration="1000">
             <thead>
@@ -78,13 +107,12 @@
                 <td>Nama Pengadu</td>
                 <td>Judul Pengaduan</td>
                 <td>Deskripsi Pengaduan</td>
-                <td>Tanggal</td>
                 <td>Foto</td>
             </tr>
             </thead>
         <?php
         $no = 1;
-        $data_pengaduan = mysqli_query($conn, "SELECT * FROM pengaduan ORDER BY tanggal ASC"); 
+        $data_pengaduan = mysqli_query($conn, "SELECT * FROM pengaduan ORDER BY id_pengaduan ASC"); 
         while ($row = mysqli_fetch_array($data_pengaduan)) {
         ?>
         <tr>
@@ -92,14 +120,25 @@
             <td><?= $row['nama']; ?></td>
             <td><?= $row['judul']; ?></td>
             <td><?= $row['deskripsi']; ?></td>
-            <td><?= $row['tanggal']; ?></td>
-            <td><img src="upload/<?= $row['foto']; ?>" width="90" alt=""></td>
+            <td><img  src="upload/<?= $row['foto']; ?>" width="90" alt=""></td>
         </tr>
     <?php } ?>
 </table>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+        // JavaScript untuk membuka modal
+        function openModal(src) {
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("modalImage").src = src;
+        }
+
+        // JavaScript untuk menutup modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
     </script>  
 </body>
 </html>

@@ -41,7 +41,6 @@ body {
     color: black;
     border-radius: 5px;
 }
-
 /* Responsif */
 @media screen and (max-width: 600px) {
     .navbar {
@@ -175,6 +174,7 @@ body {
 .herro-image img {
     max-width: 500px;
     height: auto;
+    filter: drop-shadow(7px 8px 8px #ffffff4b); 
 }
 
 /* Responsif untuk tampilan mobile */
@@ -204,6 +204,7 @@ body {
     .herro-image img{
         max-width: 370px;
         height: auto;
+        filter: drop-shadow(7px 8px 8px #ffffff4b);
     }
 }
 
@@ -217,7 +218,7 @@ body {
     padding: 40px 20px;
 }
 .about-card {
-    background-color: #ffffff3f;
+    background-color: #ffffff31;
     color: #ffffff;
     border-radius: 8px;
     padding: 20px;
@@ -236,7 +237,7 @@ body {
     margin-bottom: 10px;
 }
 .about-card h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 0 5px;
     color: #ffffff;
 }

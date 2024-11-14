@@ -34,6 +34,7 @@
         .form-pengaduan input[type="text"],
         .form-pengaduan textarea,
         .form-pengaduan input[type="date"],
+        .form-pengaduan input[type="number"],
         .form-pengaduan input[type="file"] {
             width: 100%;
             padding: 10px;
@@ -77,7 +78,7 @@
     <header>
     <div class="navbar">
         <div class="logo">
-            <a href="#">PENGADUAN</a>
+            <a href="#"> <i class="fa fa-bullhorn"></i> PENGADUAN</a>
         </div>
         <div class="hamburger" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
@@ -85,7 +86,7 @@
         <div class="menu">
             <a href="/"><i class="fa fa-home"></i> Beranda</a>
             <a href="index.php#tentang"><i class="fa fa-info-circle"></i> Tentang</a>
-            <a href="form.php"><i class="fa fa-bullhorn"></i> Pengaduan</a>
+            <a href="form.php" class="active"><i class="fa fa-file-text"></i> Pengaduan</a>
             <a href="table.php"><i class="fa fa-table"></i> Table</a>
         </div>
     </div>
@@ -104,8 +105,8 @@
             <label for="deskripsi">Deskripsi Pengaduan:</label>
             <textarea id="deskripsi" name="deskripsi" rows="4" required placeholder="Masukkan deskripsi pengaduan"></textarea>
 
-            <label for="tanggal">Tanggal Pengaduan:</label>
-            <input type="date" id="tanggal" name="tanggal" required>
+            <label for="tanggal">Nomor Pengadu:</label>
+            <input type="number" id="nomor" name="no_telp" required>
 
             <label for="foto">Foto Pengaduan:</label>
             <input type="file" id="foto" name="foto" accept="image/*">
