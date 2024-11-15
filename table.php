@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KELOMPOK 3 | PWEB</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/megaphone.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="asset/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         /* Styling untuk tabel */
@@ -75,6 +76,20 @@
             font-weight: bold;
             cursor: pointer;
         }
+        /* item gallery glitch */
+        .gallery-item {
+        overflow: hidden;
+        border-right: 3px solid var(--background-color);
+        border-bottom: 3px solid var(--background-color);
+        }
+
+        .gallery-item img {
+        transition: all ease-in-out 0.4s;
+        }
+
+        .gallery-item:hover img {
+        transform: scale(1.1);
+        }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -120,25 +135,23 @@
             <td><?= $row['nama']; ?></td>
             <td><?= $row['judul']; ?></td>
             <td><?= $row['deskripsi']; ?></td>
-            <td><img  src="upload/<?= $row['foto']; ?>" width="90" alt=""></td>
+            <td>
+                <div class="gallery-item">
+            <a href="upload/<?= $row['foto'];?>" class="glightbox" data-gallery="images-gallery">
+                <img src="upload/<?= $row['foto'];?>" alt="" class="img-fluid" width="80">
+              </a> </div></td>
         </tr>
     <?php } ?>
 </table>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="asset/glightbox/js/glightbox.min.js"></script>
     <script>
       AOS.init();
     </script>
     <script>
-        // JavaScript untuk membuka modal
-        function openModal(src) {
-            document.getElementById("myModal").style.display = "block";
-            document.getElementById("modalImage").src = src;
-        }
-
-        // JavaScript untuk menutup modal
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>  
+        const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
+    </script>
 </body>
 </html>

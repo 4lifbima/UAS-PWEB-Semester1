@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KELOMPOK 3 | PWEB</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/megaphone.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +13,7 @@
     <header>
     <div class="navbar">
         <div class="logo">
-            <a href="#"><i class="fa fa-bullhorn"></i> PENGADUAN</a>
+            <a href="#"> <i class="fa fa-bullhorn" aria-hidden="true"></i> PENGADUAN</a>
         </div>
         <div class="hamburger" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
@@ -72,10 +72,7 @@
     <!-- footer -->
     <footer>
         <p>&copy; 2024 Kelompok 3 - Pengaduan Masyarakat.</p>
-        <p>Follow us on social media: 
-            <a href="" style="color:#ffffffcc;"><i class="fa fa-facebook-square"></i></a> | 
-            <a href="https://github.com/4lifbima/UAS-PWEB-Semester1" style="color:#ffffffcc;"><i class="fa fa-github"></i></a> | 
-            <a href="https://www.instagram.com/alifbimapradana07" style="color:#ffffffcc;"><i class="fa fa-instagram"></i></a>
+        <p>Hak Cipta Dilindungi Oleh Undang-undang
         </p>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
