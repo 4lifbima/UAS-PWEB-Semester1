@@ -85,7 +85,7 @@
         </div>
         <div class="menu">
             <a href="/"><i class="fa fa-home"></i> Beranda</a>
-            <a href="index.php#tentang"><i class="fa fa-info-circle"></i> Tentang</a>
+            <a href="index.php#tentang"><i class="fa fa-users"></i> Myteam</a>
             <a href="form.php" class="active"><i class="fa fa-file-text"></i> Pengaduan</a>
             <a href="table.php"><i class="fa fa-table"></i> Table</a>
         </div>
@@ -114,6 +114,12 @@
             <button type="submit" name="tambah">Kirim </button>
         </form>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Kelompok 3 - Pengaduan Masyarakat.</p>
+        <p>Hak Cipta Dilindungi Oleh Undang-undang
+        </p>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

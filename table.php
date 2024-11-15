@@ -50,37 +50,9 @@
             background-color: #494a4d;
             color: white;
         }
-        /* modal */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; 
-            z-index: 100; 
-            padding-top: 60px;
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            background-color: rgba(0, 0, 0, 0.8); 
-        }
-        .modal-content {
-            display: block;
-            margin: auto;
-            max-width: 80%;
-        }
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 35px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
         /* item gallery glitch */
         .gallery-item {
         overflow: hidden;
-        border-right: 3px solid var(--background-color);
-        border-bottom: 3px solid var(--background-color);
         }
 
         .gallery-item img {
@@ -105,9 +77,9 @@
         </div>
         <div class="menu">
             <a href="#"><i class="fa fa-home"></i> Beranda</a>
-            <a href="index.php#tentang"><i class="fa fa-info-circle"></i> Tentang</a>
+            <a href="index.php#tentang"><i class="fa fa-users"></i> Myteam</a>
             <a href="form.php"><i class="fa fa-file-text"></i> Pengaduan</a>
-            <a href="table.php"><i class="fa fa-table"></i> Table</a>
+            <a href="table.php" class="active"><i class="fa fa-table"></i> Table</a>
         </div>
     </div>
     </header>

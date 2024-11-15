@@ -94,6 +94,12 @@ body {
     padding: 14px 20px;
     text-decoration: none;
 }
+.menu a.active {
+    background-color: #ddd;
+    color: black;
+    border-radius: 5px;
+
+}
 
 .menu a:hover {
     background-color: #ddd;
@@ -174,7 +180,7 @@ body {
 .herro-image img {
     max-width: 500px;
     height: auto;
-    filter: drop-shadow(7px 8px 8px #ffffff4b); 
+    filter: drop-shadow(7px 8px 8px #0e0a0a4b); 
 }
 
 /* Responsif untuk tampilan mobile */
@@ -187,6 +193,7 @@ body {
     .herro-text {
         padding-right: 0;
         text-align: start;
+        margin-top: -3.9vh;
     }
     .herro-text h1 {
         font-size: 30px;
@@ -225,11 +232,9 @@ body {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(102, 100, 100, 0.3);
-    transition: transform 0.3s;
+    cursor: pointer;
 }
-.about-card:hover {
-    transform: translateY(-5px);
-}
+
 .about-card img {
     width: 250px;
     height: 250px;
