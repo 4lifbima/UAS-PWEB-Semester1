@@ -11,13 +11,13 @@ ini adalah tampilan depan
 ## 🚀 About us
 Sebelumnya Perkenalkan kami dari kelompok 3  yang terdiri dari :
 1. Alif Bima Pradana
-<img src="img/alif.png">
+<img src="img/alif.png" width="30">
 
 2. Indah Belastri Sibran
-<img src="img/indah.png">
+<img src="img/indah.png" width="30">
 
 3. Dhimas Pramudya LC Lasabang
-<img src="img/dhimaz.png">
+<img src="img/dhimaz.png" width="30">
 
 
 ## License
