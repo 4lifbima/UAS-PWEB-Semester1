@@ -40,21 +40,19 @@
             padding: 10px;
             margin-top: 5px;
             margin-bottom: 15px;
+            color:white;
             border: 1px solid #cccccc2c;
             background-color: #ffffff17;
             border-radius: 5px;
             box-sizing: border-box;
         }
-        .form-pengaduan textarea::-webkit-input-placeholder{
+        .form-pengaduan textarea::placeholder{
             color: #ffffff;
         }
-        .form-pengaduan input,::-webkit-input-placeholder{
+        .form-pengaduan input::placeholder{
             color: #ffffff;
         }
 
-        .form-pengaduan textarea {
-            resize: vertical;
-        }
 
         .form-pengaduan button {
             width: 100%;
@@ -85,7 +83,7 @@
         </div>
         <div class="menu">
             <a href="/"><i class="fa fa-home"></i> Beranda</a>
-            <a href="index.php#tentang"><i class="fa fa-users"></i> Myteam</a>
+            <a href="index#tentang"><i class="fa fa-users"></i> Myteam</a>
             <a href="form.php" class="active"><i class="fa fa-file-text"></i> Pengaduan</a>
             <a href="table.php"><i class="fa fa-table"></i> Table</a>
         </div>
@@ -106,12 +104,12 @@
             <textarea id="deskripsi" name="deskripsi" rows="4" required placeholder="Masukkan deskripsi pengaduan"></textarea>
 
             <label for="tanggal">Nomor Pengadu:</label>
-            <input type="number" id="nomor" name="no_telp" required>
+            <input type="number" id="nomor" name="no_telp" placeholder="Masukan nomor" required>
 
             <label for="foto">Foto Pengaduan:</label>
             <input type="file" id="foto" name="foto" accept="image/*">
 
-            <button type="submit" name="tambah">Kirim </button>
+            <button type="submit" name="tam bah">Kirim </button>
         </form>
     </section>
 

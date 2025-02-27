@@ -126,10 +126,12 @@ body {
 
     .menu.show {
         display: flex;
+        z-index: 10;
     }
 
     .hamburger {
         display: block;
+        z-index: 10;
     }
 
     /* Navbar Styling in Mobile */
@@ -215,7 +217,7 @@ body {
     }
 }
 
-   /* Styling Section About Cards */
+   /* Kard unntuk section about */
 .about-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -252,13 +254,12 @@ body {
     color: #ffffffcc;
 }
 
-/* Footer Styling */
 footer {
     background-color: #101063;
     color: #ffffffcc;
     padding: 20px 0;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
     

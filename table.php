@@ -76,7 +76,7 @@
             <i class="fa fa-bars"></i>
         </div>
         <div class="menu">
-            <a href="#"><i class="fa fa-home"></i> Beranda</a>
+            <a href="index.php"><i class="fa fa-home"></i> Beranda</a>
             <a href="index.php#tentang"><i class="fa fa-users"></i> Myteam</a>
             <a href="form.php"><i class="fa fa-file-text"></i> Pengaduan</a>
             <a href="table.php" class="active"><i class="fa fa-table"></i> Table</a>

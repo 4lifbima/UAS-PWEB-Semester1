@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/megaphone.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
     <header>
@@ -45,25 +45,25 @@
             <!-- Card 1 -->
             <div class="about-card" data-aos="fade-up" data-aos-duration="1000">
                 <img src="img/pakrahmat.png" alt="Member Image">
-                <h3>Rahmat Taufik R.I Bau, M.Kom.</h3>
+                <a href="https://www.reddishlion.com/" style="text-decoration:none;"><h3>Rahmat Taufik R.L Bau, M.Kom.</h3></a>
                 <p>Dosen Pengampu</p>
             </div>
             <!-- Card 2 -->
             <div class="about-card" data-aos="fade-up" data-aos-duration="1500">
                 <img src="img/alif.png" alt="Member Image">
-                <h3>Alif Bima Pradana</h3>
+                <a href="https://mahasiswa.ung.ac.id/531423009/about" style="text-decoration: none;"><h3>Alif Bima Pradana</h3></a>
                 <p>Backend Developer</p>
             </div>
             <!-- Card 3 -->
             <div class="about-card" data-aos="fade-up" data-aos-duration="2000">
                 <img src="img/indah.png" alt="Member Image">
-                <h3>Indah Belastri Sibran</h3>
+                <a href="https://www.linkedin.com/in/indah-belastri-sibran-911317335" style="text-decoration: none;"><h3>Indah Belastri Sibran</h3></a>
                 <p>Frontend Developer</p>
             </div>
             <!-- Card 4 -->
             <div class="about-card" data-aos="fade-up" data-aos-duration="2500">
                 <img src="img/dhimaz.png" alt="Member Image">
-                <h3>Dhimaz Pramudya Lasabang</h3>
+                <a href="https://mahasiswa.ung.ac.id/531423008/about" style="text-decoration: none;"><h3>Dhimaz Pramudya Lasabang</h3></a>
                 <p>Frontend Developer</p>
             </div>
         </div>

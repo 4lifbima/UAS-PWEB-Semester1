@@ -12,6 +12,7 @@
     // memngirim foto ke folder tujuan yang telah di inputkan pada form
     move_uploaded_file($tmpFile, $dir.$foto);
 
+    // melakukan query insert data ke dalam database 
     $query = "INSERT INTO pengaduan(nama, judul, deskripsi, notelp, foto) VALUES('$nama', '$judul', '$deskripsi', '$nomor', '$foto')";
     $sql = mysqli_query($conn, $query);
             if($sql){
@@ -19,6 +20,4 @@
             }else{
                 echo "Data gagal disimpan:(" . mysqli_error($koneksi);
             }
-
-
 ?>
